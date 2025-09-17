@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  
+  <!-- link lainnya -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+  <title>chapter list</title>
+  </head>
+  <body onload="chOnload()" class="nonHome">
+    
+    <nav class="static-nav" id="nav">
+     <a class="logo" href="index.html"></a>
+      <div class="navigasi">
+        <a href="index.html">Home</a>
+        <a href="index.html#About">About</a>
+        <a href="index.html#Learn">Learn</a>
+        <a href="index.html#History">History</a>
+        <a href="index.html#Footer">Contact</a>
+      </div>
+      <div class="menu" id="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    
+    <div class="menu-more" id="menu-more">
+      <a href="index.html">Home</a>
+      <a href="index.html#About">About</a>
+      <a href="index.html#Learn">Learn</a>
+      <a href="index.html#History">History</a>
+      <a href="index.html#Footer">Contact</a>
+    </div>
+    
+    <!--##### Chapter List #####-->
+    <!--JavaScript chapter list-->
+    <section class="ch-list" id="js-ch-list">
+      <!-------------------------------------------------------->
+      <h2>JavaScript</h2>
+      <div class="progres-bar">
+        <p>50% completed</p>
+        <div></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll ch">
+        <div class="parent" id="js-chP"></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll-btn ch-scroll-btn">
+        <div class="left circle lsbtn" onclick="nextScroll('js-chP', -300)"></div>
+        <div class="right circle rsbtn" onclick="nextScroll('js-chP', 300)"></div>
+      </div>
+      <!-------------------------------------------------------->
+    </section>
+    
+    
+    <!--C++ chapter list-->
+    <section class="ch-list" id="cpp-ch-list">
+      <!-------------------------------------------------------->
+      <h2>C++</h2>
+      <div class="progres-bar">
+        <p>99% completed</p>
+        <div></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll ch">
+        <div class="parent" id="cpp-chP"></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll-btn">
+        <div class="left circle lsbtn" onclick="nextScroll('cpp-chP', -300)"></div>
+        <div class="right circle rsbtn" onclick="nextScroll('cpp-chP', 300)"></div>
+      </div>
+      <!-------------------------------------------------------->
+    </section>
+    
+    
+    <!--Python chapter list-->
+    <section class="ch-list" id="py-ch-list">
+      <!-------------------------------------------------------->
+      <h2>Python</h2>
+      <div class="progres-bar">
+        <p>99% completed</p>
+        <div></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll ch">
+        <div class="parent" id="py-chP"></div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="scroll-btn">
+        <div class="left circle lsbtn" onclick="nextScroll('py-chP', -300)"></div>
+        <div class="right circle rsbtn" onclick="nextScroll('py-chP', 300)"></div>
+      </div>
+      <!-------------------------------------------------------->
+    </section>
+    
+    <!--##### Footer #####-->
+    <section class="footer" id="Footer">
+      <!-------------------------------------------------------->
+      <div class="contact content">
+        <h1>Kontak</h1>
+        <p>+62 123 456 789</p>
+        <p>BrainCode@learn.id</p>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="social-media content">
+        <h1>Media Sosial</h1>
+        <div>
+          <div class="ig"></div>
+          <div class="tt"></div>
+          <div class="x"></div>
+        </div>
+      </div>
+      <!-------------------------------------------------------->
+      <div class="navigation content">
+        <h1>Navigasi</h1>
+        <a href="index.html">Home</a>
+        <a href="index.html#About">About</a>
+        <a href="index.html#Learn">Learn</a>
+        <a onclick="selectCh(0)" href="chapter-list.html">Learn JavaScript</a>
+        <a onclick="selectCh(1)" href="chapter-list.html">Learn Python</a>
+        <a onclick="selectCh(2)" href="chapter-list.html">Learn C++</a>
+        <a href="index.html#History">History</a>
+      </div>
+      <!-------------------------------------------------------->
+    </section>
+    <div class="credit">
+      <p>© 2025 Dikembangkan oleh TheDreamCatcher</p>
+    </div>
+    
+    <p id="debug"></p>
+    <script src="scripts/dataSoal.js"></script>
+    <script src="scripts/dataMateri.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
